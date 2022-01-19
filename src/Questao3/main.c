@@ -31,7 +31,7 @@ int main() {
     printVector(*rVector);
 
     Vector* wVector = interception(*qVector, *rVector);
-    printf("\n\n---- Valores vetor Q:");
+    printf("\n\n---- Valores vetor W:");
     printVector(*wVector);
 
     free(qVector);
