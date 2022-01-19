@@ -13,14 +13,14 @@ int main() {
     printf("\nEscreva a string de referenência: ");
     fgets(reference, MAX_AMOUNT_CHARACTERS_READ, stdin);
     fflush(stdin);
-    removeNewLine(reference);
+    removeNewLine(strlwr(reference));
 
     const size_t referenceSize = strlen(reference);
     char* subString = (char*) malloc(referenceSize * sizeof(char));
     printf("\nEscreva a substring que deve ser encontrada: ");
     fgets(subString, referenceSize, stdin);
     fflush(stdin);
-    removeNewLine(subString);
+    removeNewLine(strlwr(subString));
 
     printf("\nO primeiro endereço da string referência: %X. Valor: %c.", &reference[0], reference[0]);
     
