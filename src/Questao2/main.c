@@ -37,6 +37,8 @@ int main() {
     insertionSort(addressVector, vectorSize);
     printAddressVector(addressVector, vectorSize);
 
+    free(vector);
+    free(addressVector);
     return 0;
 }
 

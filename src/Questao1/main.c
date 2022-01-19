@@ -32,6 +32,7 @@ int main() {
         printf("\nO primeiro endereço da substring está em: %X. Valor: %c.", firstSubstringAddress, *firstSubstringAddress);
     }
 
+    free(subString);
     return 0;
 }
 
